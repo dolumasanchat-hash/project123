@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="D:\jQuery\jquery-4.0.0.min.js">
+        </script>
+    </head>
+    <body>
+<p>абзац</p>
+  <p></p> <!-- Этот станет красным -->
+  <p>абзац</p>
+  <p> </p> <!-- Не станет красным (пробел внутри) -->
+  <p></p> <!-- И этот тоже станет красным -->
+<script>
+       $('p:empty').css('color', 'red');
+</script>
+    </body>
+</html>

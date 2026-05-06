@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="D:\jQuery\jquery-4.0.0.min.js">
+        </script>
+    </head>
+    <body>
+<p id="aaa">Первый абзац</p>
+<p id="bbb">Второй абзац</p>
+<p id="ccc">Третий абзац</p>
+<script>
+	$('p').map(function(index) {
+  this.id = index + 1;
+  return this;
+}).get();
+</script>
+    </body>
+</html>

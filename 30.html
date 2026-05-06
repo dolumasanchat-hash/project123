@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="D:\jQuery\jquery-4.0.0.min.js">
+        </script>
+    </head>
+    <body>
+<ul>
+  <li>Первый элемент</li>
+  <li>Второй элемент</li>
+  <li>Третий элемент</li>
+</ul>
+<ol>
+  <li>Нумерованный список 1</li>
+  <li>Нумерованный список 2</li>
+</ol>
+<script>
+    $('li').each(function(index) {
+  $(this).text(index + 1);
+});
+</script>
+    </body>
+</html>
