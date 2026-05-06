@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="D:\jQuery\jquery-4.0.0.min.js">
+        </script>
+    </head>
+    <body>
+<h1>Первый заголовок (h1)</h1>
+  <h2>Этот окрасится в красный (идёт после h1)</h2>
+  
+  <p>Обычный текст — не заголовок</p>
+  <h3>Этот НЕ окрасится (идёт после параграфа)</h3>
+  
+  <h4>Ещё один заголовок (h4)</h4>
+  <h5>Этот окрасится в красный (идёт после h4)</h5>
+  
+  <div>Блок div</div>
+  <h6>Этот НЕ окрасится (идёт после div)</h6>
+<script>
+       $(':header.h1, h4').css('color', 'red');
+</script>
+    </body>
+</html>
