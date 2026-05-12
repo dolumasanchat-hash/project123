@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="D:\jQuery\jquery-4.0.0.min.js">
+        </script>
+    </head>
+    <body>
+        <input type="text" value="aaa">
+<input type="text" value="bbb">
+<input type="text" value="ccc">
+<input type="text" value="vvv">
+<input type="text" value="xxx">
+<input type="text" value="ddd">
+<script>
+$('input').attr('value', function(index, value) {
+	return value + ' ' + index / 2;
+});
+</script>
+    </body>
+</html>

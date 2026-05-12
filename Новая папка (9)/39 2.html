@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="D:\jQuery\jquery-4.0.0.min.js">
+        </script>
+    </head>
+    <body>
+  <input type="checkbox"> Чекбокс 1
+<input type="checkbox"> Чекбокс 2
+<input type="checkbox" checked> Чекбокс 3
+<script>
+   $(document).ready(function() {
+    // Устанавливаем все неотмеченные чекбоксы в отмеченные
+    $('input[type="checkbox"]:not(:checked)').prop('checked', true);
+  });
+</script>
+    </body>
+</html>
