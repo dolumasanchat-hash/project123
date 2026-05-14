@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="D:\jQuery\jquery-4.0.0.min.js">
+        </script>
+    </head>
+    <body>
+  <p>
+	<a id="hide" href="">hide</a> <a id="show" href="">show</a>
+</p>
+<div id="block">
+	<ol>
+		<li>text</li>
+		<li>text</li>
+		<li>text</li>
+		<li>text</li>
+		<li>text</li>
+		<li>text</li>
+		<li>text</li>
+		<li>text</li>
+		<li>text</li>
+		<li>text</li>
+	</ol>
+</div>
+<script>
+      $('#hide').click(function(e) {
+    e.preventDefault();
+    $('#block').hide(600);
+  });
+  $('#show').click(function(e) {
+    e.preventDefault();
+    $('#block').show(600);
+  });
+});
+</script>
+    </body>
+</html>

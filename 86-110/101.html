@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="D:\jQuery\jquery-4.0.0.min.js">
+        </script>
+    </head>
+    <body>
+  <a href="https://yandex.ru">Яндекс</a>
+    <a href="https://google.com">Google</a>
+<script>
+     // Находим все ссылки и для каждой привязываем событие mouseenter
+        $('a').on('mouseenter', function handler() {
+            const $link = $(this);
+            // Сохраняем и изменяем текст только один раз
+            if (!$link.data('processed')) {
+                const originalText = $link.text();
+                const href = $link.attr('href');
+
+                $link.text(originalText + ' (' + href + ')');
+
+                // Устанавливаем флаг, чтобы не выполнять действие повторно
+                $link.data('processed', true)
+
+                // Отвязываем обработчик события после первого срабатывания
+                $link.off('mouseenter', handler);
+            }
+        });
+</script>
+    </body>
+</html>

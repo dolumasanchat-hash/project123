@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="D:\jQuery\jquery-4.0.0.min.js">
+        </script>
+    </head>
+    <body>
+    <a href="https://code.mu/ru/">ссылка</a>
+  <a href="https://yandex.ru">Яндекс</a>
+<script>
+   $('a').on('mouseover', function() {
+    var $elem = $(this);
+    $elem.append('(' + $elem.attr('href') + ')');
+});
+</script>
+    </body>
+</html>

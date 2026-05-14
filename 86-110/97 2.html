@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="D:\jQuery\jquery-4.0.0.min.js">
+        </script>
+    </head>
+    <body>
+    <input type="text" placeholder="tex1">
+  <input type="text" placeholder="text2.">
+<script>
+   $('input').on('blur', function() {
+      // Получаем значение текущего инпута
+      const inputValue = $(this).val();
+      // Выводим значение в абзац с id="test"
+      $('#test').text(inputValue);
+      });
+</script>
+    </body>
+</html>

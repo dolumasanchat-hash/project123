@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="D:\jQuery\jquery-4.0.0.min.js">
+        </script>
+    </head>
+    <body>
+    <li>текст 1</li>
+    <li class="www">
+      <a href="#">текст 2</a>
+    </li>
+    <li>текст 3</li>
+<script>
+   $('li.www a').parent().addBack('li.www').css('color', 'red');
+</script>
+    </body>
+</html>
