@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Главаная страница</title>
+        <link rel="stylesheet" href="booking.css">
+        </head>
+<body>
+<main>
+     <h1>Оформление заказа</h1>
+        <form action="#" method="POST">
+            <div class="order-info">
+                <p>Регион: ...</p>
+                <p>Адрес локации: ...</p>
+                <p>Дата мероприятия: ...</p>
+                <p>Количество человек: ...</p>
+                <p>Стоимость: ...</p>
+            </div>
+            
+            <h3>Дополнительные услуги:</h3>
+            <label><input type="checkbox">Организация питания</label>
+            <label><input type="checkbox">Услуги аниматоров</label>
+            <label><input type="checkbox">Услуги ведущего</label>
+            <label><input type="checkbox">Услуги детского такси</label>
+            
+            <textarea placeholder="Комментарий"></textarea>
+            <input type="email" placeholder="Email заказчика" required>
+            
+            <p>Итого: <span id="total-price">0</span> руб.</p>
+            <button type="submit">Оформить бронирование</button>
+        </form>
+</main>
